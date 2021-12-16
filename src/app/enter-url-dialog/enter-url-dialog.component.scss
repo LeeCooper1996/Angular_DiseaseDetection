@@ -1,0 +1,21 @@
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  .saveBtn {
+    background-color: #6db33f;
+    color: white;
+    margin-right: 1rem;
+  }
+  .cancelBtn {
+    background: white;
+    color: black;
+  }
+}
+.inputDialog{
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,11 @@
+<div class="inputDialog">
+  <mat-form-field appearance="outline">
+    <mat-label>Enter URL</mat-label>
+    <input [(ngModel)]="url" matInput type="text" required />
+    <mat-error>Url is required</mat-error>
+  </mat-form-field>
+</div>
+<div class="btns">
+  <button mat-raised-button class="saveBtn" (click)="onSave()">Save</button>
+  <button mat-raised-button class="saveBtn cancelBtn" (click)="onCancel()">Cancel</button>
+</div>

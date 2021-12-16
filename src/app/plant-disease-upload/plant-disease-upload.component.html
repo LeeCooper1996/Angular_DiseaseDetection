@@ -1,0 +1,28 @@
+<div class="outerBox">
+  <div class="topNav">
+    <span class="heading centerItems">Plant Disease Detection</span>
+    <!--<mat-icon (click)="enterUrlFunc()" class="icon pointer">language</mat-icon> -->
+  </div>
+  <mat-card class="midCard">
+    <div class="topBtnsCard">
+      <button mat-raised-button type="button" class="browseBtn" (click)="fileInput1.click()">
+        Browse Image
+        <input hidden type="file" accept="image/*" #fileInput1 (change)="onFileSelect($event); fileInput1.value = ''" />
+      </button>
+      <!--
+      <button mat-raised-button type="button" class="browseBtn" (click)="enterUrlFunc()">
+        Enter URL
+        <input hidden type="file" accept="image/*" #fileInput1 (change)="onFileSelect($event); fileInput1.value = ''" />
+      </button>
+      -->
+    </div>
+    <div class="topBtnsCard">
+      <img class="imgFile" [src]='fileUrl' alt="">
+    </div>
+    <div class="topBtnsCard">
+      <button mat-raised-button type="button" *ngIf="file" class="browseBtn uploadBtn" (click)="uploadImage()">
+        Upload Image
+      </button>
+    </div>
+  </mat-card>
+</div>
